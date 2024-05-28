@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<div class="hero">
+<div class="hero" style="background-image: url('img/PaginaPrincipal.svg');">
     <div class="hero-content">
         <h1>Blog y portfolio en un paquete</h1>
         <p>Karyna Yunevcyh</p>
@@ -15,9 +15,183 @@
     </div>
 </div>
 <div id="portfolio" class="portfolio-section">
-    <h2>Mi Portfolio</h2>
-    <!-- Содержимое портфолио -->
-    <p>Aquí se puede colocar contenido del portafolio, fotos, textos, etc.</p>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Página Personal</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/segundo.svg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+           border-radius: 10px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            background: url('img/PaginaPrincipal.svg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        nav {
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.8);
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+
+            background-color: rgba(85, 85, 85, 0.8);
+        }
+        .container {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 10px;
+        }
+        .container img{
+        border-radius: 10px;
+        height:300px;
+        float: left;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .portfolio-item, .blog-post, .photo-item {
+            margin-bottom: 1.5rem;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 1rem 2rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Mi Página Personal</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#blog">Blog</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#fotos">Fotos de Viajes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre-mi" class="section">
+            <h2>Sobre Mí</h2>
+            <img src="img/Me.JPEG" alt="Foto de Karyna">
+            <p>Hola, soy Karyna. Soy un desarrollador de software con pasión por los viajes y la fotografía. En este sitio, comparto mis proyectos de programación, mis experiencias de viaje y algunas de mis mejores fotos. ¡Gracias por visitarme!</p>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Título del Blog Post 1</h3>
+                <p>Este es un resumen de tu primera entrada de blog. Aquí puedes compartir tus pensamientos, experiencias o cualquier cosa que desees.</p>
+            </div>
+            <div class="blog-post">
+                <h3>Título del Blog Post 2</h3>
+                <p>Este es un resumen de tu segunda entrada de blog. Aquí puedes compartir tus pensamientos, experiencias o cualquier cosa que desees.</p>
+            </div>
+            <!-- Añade más entradas de blog según sea necesario -->
+        </section>
+
+        <section id="portafolio" class="section">
+            <h2>Portafolio</h2>
+            <div class="portfolio-item">
+                <h3>Proyecto de Programación 1</h3>
+                <p>Descripción breve de tu proyecto de programación. Puedes incluir detalles sobre las tecnologías utilizadas y los desafíos que superaste.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Proyecto de Programación 2</h3>
+                <p>Descripción breve de tu proyecto de programación. Puedes incluir detalles sobre las tecnologías utilizadas y los desafíos que superaste.</p>
+            </div>
+            <!-- Añade más proyectos según sea necesario -->
+        </section>
+
+        <section id="fotos" class="section">
+            <h2>Fotos de Viajes</h2>
+            <div class="photo-item">
+                <img src="foto1.jpg" alt="Descripción de la foto 1" style="width:100%;">
+                <p>Descripción de la foto 1 tomada durante tus viajes.</p>
+            </div>
+            <div class="photo-item">
+                <img src="foto2.jpg" alt="Descripción de la foto 2" style="width:100%;">
+                <p>Descripción de la foto 2 tomada durante tus viajes.</p>
+            </div>
+            <!-- Añade más fotos según sea necesario -->
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form class="contact-form">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+
+    </body>
+    </html>
+
 </div>
 </body>
 </html>

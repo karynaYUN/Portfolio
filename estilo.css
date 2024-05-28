@@ -1,14 +1,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('img/PaginaPrincipal.svg') no-repeat center center/cover;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #f4f4f4;
 }
 
 .hero {
     position: relative;
     height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +18,6 @@ body {
 .hero-content {
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
@@ -48,7 +48,7 @@ body {
 
 .portfolio-section {
     padding: 50px;
-    background: rgba(255, 255, 255, 0.8);
     text-align: center;
     min-height: 100vh;
 }
+
