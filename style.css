@@ -232,6 +232,7 @@ header nav .nav-links a.active{
 .portfolio .boxs .box .box-hover span{
     color: #fff;
     font-size: 25px;
+    text-align: center;
 }
 
 /* start Contact */
