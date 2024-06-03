@@ -1,197 +1,148 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal - Karyna Yunevcyh</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="hero" style="background-image: url('img/PaginaPrincipal.svg');">
-    <div class="hero-content">
-        <h1>Blog y portfolio en un paquete</h1>
-        <p>Karyna Yunevcyh</p>
-        <a href="#portfolio" class="button">Pulsa aquí</a>
+<header>
+    <nav class="contanier">
+        <h1>karyna.yun</h1>
+        <i id="btn-menu" class="fa-solid fa-bars"></i>
+        <div class="nav-links">
+            <a href="#home" class="active">Pagina principal</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#services">Conocimientos</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contactame</a>
+        </div>
+    </nav>
+</header>
+
+<!-- start home sec -->
+<div class="hero" id="home">
+    <div class="contanier">
+        <div class="content">
+            <h4>Hola, soy</h4>
+            <h1>Karyna Yunevych</h1>
+            <p>Front-End y Back-End Developer </p>
+            <a href="#" class="btn">Descarga mi CV</a>
+        </div>
+
+        <div class="hero-img">
+
+            <img src="" alt="">
+        </div>
     </div>
 </div>
-<div id="portfolio" class="portfolio-section">
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Página Personal</title>
-        <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('img/segundo.svg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-        }
-        header {
-           border-radius: 10px;
-            background-color: rgba(51, 51, 51, 0.8);
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-            background: url('img/PaginaPrincipal.svg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        nav {
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(68, 68, 68, 0.8);
-        }
-        nav a {
-            color: #fff;
-            padding: 1rem;
-            text-decoration: none;
-            display: block;
-        }
-        nav a:hover {
 
-            background-color: rgba(85, 85, 85, 0.8);
-        }
-        .container {
-            padding: 2rem;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 2rem;
-            border-radius: 10px;
-        }
-        .container img{
-        border-radius: 10px;
-        height:300px;
-        float: left;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        .section p {
-            line-height: 1.6;
-        }
-        .portfolio-item, .blog-post, .photo-item {
-            margin-bottom: 1.5rem;
-        }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 1rem 2rem;
-            border: none;
-            background-color: #333;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .contact-form button:hover {
-            background-color: #555;
-        }
-        footer {
-            background-color: rgba(51, 51, 51, 0.8);
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .section:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
-    </head>
-    <body>
-
-    <header>
-        <h1>Mi Página Personal</h1>
-    </header>
-
-    <nav>
-        <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#blog">Blog</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#fotos">Fotos de Viajes</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <div class="container">
-        <section id="sobre-mi" class="section">
-            <h2>Sobre Mí</h2>
-            <img src="img/Me.JPEG" alt="Foto de Karyna">
-            <p>Hola, soy Karyna. Soy un desarrollador de software con pasión por los viajes y la fotografía. En este sitio, comparto mis proyectos de programación, mis experiencias de viaje y algunas de mis mejores fotos. ¡Gracias por visitarme!</p>
-        </section>
-
-        <section id="blog" class="section">
-            <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Título del Blog Post 1</h3>
-                <p>Este es un resumen de tu primera entrada de blog. Aquí puedes compartir tus pensamientos, experiencias o cualquier cosa que desees.</p>
+<!-- start about sec -->
+<section id="about" class="about">
+    <div class="contanier">
+        <div class="about-img">
+            <img src="img/Me.JPEG" alt="">
+        </div>
+        <div class="content">
+            <h1>Sobre<span>Mi</span></h1>
+            <h3>Front-End and Back-End Developer</h3>
+            <p>Soy un desarrollador Full Stack con experiencia en back-end y front-end. Me apasiona crear soluciones innovadoras y eficientes que resuelvan problemas reales y mejoren la experiencia del usuario. Con habilidades en diversas tecnologías y lenguajes de programación, me adapto rápidamente a nuevos desafíos y me esfuerzo por mantenerme al día con las últimas tendencias en el desarrollo web.</p>
+            <div class="btns">
+                <!-- pegar el enlace de mi CV-->
+                <a href="#" class="btn">Download CV</a>
+                <a href="#Contact" class="btn">Contact Me</a>
             </div>
-            <div class="blog-post">
-                <h3>Título del Blog Post 2</h3>
-                <p>Este es un resumen de tu segunda entrada de blog. Aquí puedes compartir tus pensamientos, experiencias o cualquier cosa que desees.</p>
-            </div>
-            <!-- Añade más entradas de blog según sea necesario -->
-        </section>
-
-        <section id="portafolio" class="section">
-            <h2>Portafolio</h2>
-            <div class="portfolio-item">
-                <h3>Proyecto de Programación 1</h3>
-                <p>Descripción breve de tu proyecto de programación. Puedes incluir detalles sobre las tecnologías utilizadas y los desafíos que superaste.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Proyecto de Programación 2</h3>
-                <p>Descripción breve de tu proyecto de programación. Puedes incluir detalles sobre las tecnologías utilizadas y los desafíos que superaste.</p>
-            </div>
-            <!-- Añade más proyectos según sea necesario -->
-        </section>
-
-        <section id="fotos" class="section">
-            <h2>Fotos de Viajes</h2>
-            <div class="photo-item">
-                <img src="foto1.jpg" alt="Descripción de la foto 1" style="width:100%;">
-                <p>Descripción de la foto 1 tomada durante tus viajes.</p>
-            </div>
-            <div class="photo-item">
-                <img src="foto2.jpg" alt="Descripción de la foto 2" style="width:100%;">
-                <p>Descripción de la foto 2 tomada durante tus viajes.</p>
-            </div>
-            <!-- Añade más fotos según sea necesario -->
-        </section>
-
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <form class="contact-form">
-                <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Email" required>
-                <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+        </div>
     </div>
+</section>
+
+<!-- start Services -->
+
+<section id="services" class="services">
+    <div class="contanier">
+        <div class="sec-top">
+            <h1>Mis <span>conocimientos</span></h1>
+        </div>
+
+        <div class="boxs">
+
+            <div class="box">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>Web Design/Front-End</h3>
+                <p>HTML,CSS</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Bases de datos</h3>
+                <p>My SQL</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Back-End</h3>
+                <p>Java</p>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    </body>
-    </html>
+<!-- start Portfolio -->
+<section id="Portfolio" class="portfolio">
+    <div class="contanier">
+        <div class="sec-top">
+            <h1>Mis <span>Trabajos</span></h1>
+        </div>
 
+        <div class="boxs">
+            <div class="box">
+                <!-- hacer igula para otros dos y pegar enlaces-->
+                <a href="https://github.com/">
+                    <div class="box-hover">
+                        <span>Mi GitHub</span>
+                    </div>
+                    <img src="img/Github-Embed-Wordpress.jpg" alt="Mi GitHub">
+                </a>
+            </div>
+            <div class="box">
+                <div class="box-hover">
+                    <span>Mi Figma</span>
+                </div>
+                <img src="img/rectangle_large_type_2_eba79a59d0f58e4ff514d66ec8527827.webp" alt="">
+            </div>
+
+            <div class="box">
+                <div class="box-hover">
+                    <span>Mi blog y portfolio</span>
+                </div>
+                <img src="img/Captura%20de%20pantalla%202024-06-03%20101039.jpg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- start Contact -->
+
+<div class="social-status">
+    <h3 class="heading">Follow <span>Me</span></h3>
+
+    <div class="social-profile-list">
+        <!--hacer los links-->
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
 </div>
 </body>
 </html>
